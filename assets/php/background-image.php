@@ -17,6 +17,9 @@ if($page == 'index.php'){
     
 } elseif($page == 'add_book.php') {
     echo '<body style="background-image: url(assets/img/booklist.jpg);">';
+
+} elseif($page == 'add_book_post.php') {
+    echo '<body style="background-image: url(assets/img/booklist.jpg);">';
     
 } elseif($page == 'booklist.php') {
     echo '<body style="background-image: url(assets/img/comment.jpg);">';
@@ -31,7 +34,10 @@ if($page == 'index.php'){
     echo '<body style="background-image: url(assets/img/tools.jpg);">';
 
 } elseif($page == 'modifybook.php') {
-    echo '<body style="background-image: url(assets/img/booklist.jpg);">'; 
+    echo '<body style="background-image: url(assets/img/booklist.jpg);">';
+
+} elseif($page == 'modifybook_post.php') {
+    echo '<body style="background-image: url(assets/img/booklist.jpg);">';
  
 }else{
     echo '<body>';

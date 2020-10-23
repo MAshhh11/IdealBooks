@@ -27,14 +27,13 @@
                             ?>
                             <div class="flex2">
                                 <div class="item">
-                                    <img class="imgwine" src="<?=$row['picture'];?>" alt="image_book" width="50%" height="auto">
-                                    <p><?= $row['author']; ?></p>
+                                    <img class="imgwine" src="<?=$row['picture'];?>" alt="image_book" width="80%" height="auto">
                                 </div>
                                 <div class="item">
                                     <p><i class="fas fa-book-open fa-2x"></i></p>
+                                    <p><?= $row['author']; ?></p>
                                     <p><?= $row['genre']; ?></p>
-                                    <p  class="description2"><?= $row['edition']; ?></p>
-                                    <p class="description2"><?= $row['publishyear']; ?></p>
+                                    <p  class="description2"><?= $row['edition']; ?> <?= $row['publishyear']; ?></p>
                                     <p class="description2"><?= $row['synopsis']; ?></p>
                                 </div>
                             </div>

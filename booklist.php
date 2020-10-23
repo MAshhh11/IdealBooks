@@ -42,7 +42,6 @@ $sql->setFetchMode(PDO::FETCH_ASSOC);
                     <img src="<?=$row['picture'];?>" alt="cover_book" width="100%" height="auto" style="border-radius:10px">
                     <h2><?= $row['title']; ?></h2>
                     <p><?= $row['author']; ?></p>
-                    <p><?= $row['edition']; ?></p>
                     <p><?= $row['genre']; ?></p>
                     <a class="button3" href="displaybook.php?id=<?= $row['id']; ?>">OPEN</a>
                 <?php 

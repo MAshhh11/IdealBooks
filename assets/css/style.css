@@ -222,8 +222,15 @@ textarea::placeholder {
   height: 30px;
 }
 
-.danger {
+.info {
   background-color: #70adb5;
+  text-align: center;
+  font-family: "Poppins-Light", sans-serif;
+  height: 30px;
+}
+
+.danger {
+  background-color: #132743;
   text-align: center;
   font-family: "Poppins-Light", sans-serif;
   height: 30px;
@@ -408,9 +415,13 @@ nav ul li {
 
 @media (min-width: 300px) {
   body {
-    background-size: 215%;
-    background-position: 50% 0%;
+    background-size: 373%;
+    background-position: 50% 50%;
     background: fixed center no-repeat cover;
+  }
+
+  #navbar #navbar-ul > li > a {
+    font-size: 13px;
   }
 
   #card {
@@ -451,14 +462,22 @@ nav ul li {
 
   #card2 {
     background-image: none;
-    background-color: #ffcbcb;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -10vh;
   }
 }
 @media (min-width: 768px) {
   body {
-    background-size: 140%;
-    background-position: 100% 50%;
+    background-size: 155%;
+    background-position: 50% 50%;
     width: 100%;
+  }
+
+  #navbar #navbar-ul > li > a {
+    font-size: 1em;
   }
 
   #card {
@@ -492,12 +511,21 @@ nav ul li {
   #card2 {
     height: 90%;
   }
+
+  footer {
+    position: absolute;
+    bottom: -30vh;
+  }
 }
 @media (min-width: 992px) {
   body {
-    background-size: 135%;
-    background-position: 100% 50%;
+    background-size: 130%;
+    background-position: 50% 50%;
     width: 100%;
+  }
+
+  #navbar #navbar-ul > li > a {
+    font-size: 1em;
   }
 
   #card {
@@ -530,12 +558,21 @@ nav ul li {
 
   #card2 {
     height: 90%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -10vh;
   }
 }
 @media (min-width: 1200px) {
   body {
     background-size: 130%;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
+  }
+
+  #navbar #navbar-ul > li > a {
+    font-size: 1em;
   }
 
   #card {
@@ -572,12 +609,21 @@ nav ul li {
 
   #card2 {
     height: auto;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -10vh;
   }
 }
 @media (min-width: 2000px) {
   body {
     background-size: 120%;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
+  }
+
+  #navbar #navbar-ul > li > a {
+    font-size: 1em;
   }
 
   #card {
@@ -614,6 +660,11 @@ nav ul li {
 
   #card2 {
     height: auto;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -2vh;
   }
 }
 #navbar {
@@ -632,7 +683,6 @@ nav ul li {
 #navbar #navbar-ul > li > a {
   font-family: "Poppins-Regular";
   text-decoration: none;
-  font-size: 1em;
   color: white;
   padding-right: 2vw;
 }
@@ -678,9 +728,7 @@ nav ul li {
 
 footer {
   text-align: center;
-  font-family: "SourceSansPro-Regular";
-  position: absolute;
-  bottom: -10vh;
+  font-family: "Poppins-Regular";
   width: 100%;
   background-color: #132743;
   height: auto;

@@ -171,6 +171,7 @@ textarea {
     background-repeat: no-repeat;
       
 }
+
 #card2 {
     width: 90%;
     height: 90%;
@@ -221,8 +222,14 @@ textarea {
     font-family: "Poppins-Light", sans-serif;
     height: 30px;
 }
-.danger {
+.info {
     background-color:$color-2;
+    text-align: center;
+    font-family: "Poppins-Light", sans-serif;
+    height: 30px;
+}
+.danger {
+    background-color:$color-1;
     text-align: center;
     font-family: "Poppins-Light", sans-serif;
     height: 30px;
