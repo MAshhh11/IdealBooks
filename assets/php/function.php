@@ -9,7 +9,7 @@
 
     
     function displayBook(){ 
-        // AFFICHE UNE ENTREE VIN 
+        // AFFICHE UNE ENTREE LIVRE
             if(isset($_GET['id'])){
                 global $db;
                 $book_id = $_GET['id'];
@@ -53,6 +53,7 @@
                 }
             }
     }
+    
     function displayAllUsers(){ //fonction admin pour afficher tous les users
         if (isset($_SESSION['id']) && $_SESSION['id'] == 3){
         global $db;
@@ -100,7 +101,7 @@
 
     }
 
-    function displayAllBookTools(){ //fonction admin pour afficher tous les vins
+    function displayAllBookTools(){ //fonction admin pour afficher tous les livres
         if (isset($_SESSION['id']) && $_SESSION['id'] == 3){
         global $db;
         $sql = $db->query("SELECT * FROM book");

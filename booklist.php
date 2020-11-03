@@ -6,7 +6,7 @@ include 'assets/php/background-image.php';
 include 'assets/php/header.php';
 include 'assets/php/nav.php';
 
-// RECUPERATION DE LA BDD TABLE WINE
+// RECUPERATION DE LA BDD TABLE BOOK
 $sql = $db->query("SELECT * FROM book");
 $sql->setFetchMode(PDO::FETCH_ASSOC);
 
@@ -20,7 +20,7 @@ $sql->setFetchMode(PDO::FETCH_ASSOC);
                 <h3>THE LIBRARY</h3>
             
             <?php if(isset($_SESSION['id'])){ 
-                //AJOUT DE VINS ET RECHERCHE POUR LES USERS SEULEMENT
+                //AJOUT DE LIVRES ET RECHERCHE POUR LES USERS SEULEMENT
             ?> 
             <p>Search for wine or you can also add a new entry to Ideal Books:</p>
                 <div class="button">
@@ -36,7 +36,7 @@ $sql->setFetchMode(PDO::FETCH_ASSOC);
     <!-- ZONE CIBLE DE RESULTATS -->
             <div id="results" class="flex">
                 <?php while($row = $sql->fetch()){ 
-                    // LA LISTE DES VINS S'AFFICHE ICI
+                    // LA LISTE DES LIVRES S'AFFICHE ICI
         ?>
                 <div id="card" class="center">
                     <img src="<?=$row['picture'];?>" alt="cover_book" width="100%" height="auto" style="border-radius:10px">

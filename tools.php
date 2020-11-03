@@ -42,7 +42,7 @@ if (isset($_SESSION['id']) && $_SESSION['id'] == 3){
          <p>You can decide whether to update wines descriptions or to remove books from database:</p>
             <div class="flex" id="results">
             <?php
-                displayAllBookTools(); //FONCTION QUI AFFICHE LES VINS
+                displayAllBookTools(); //FONCTION QUI AFFICHE LES LIVRES
             ?>
             </div>
             <div class="button2">
@@ -55,6 +55,6 @@ if (isset($_SESSION['id']) && $_SESSION['id'] == 3){
 
 <?php  
 }else{
-    echo "<div class ='danger'>You need privilege user admin to access this page!</div>";
+    echo "<div class ='danger'>You do not have sufficient permissions to access this page.</div>";
 }
 include 'assets/php/footer.php'; ?>

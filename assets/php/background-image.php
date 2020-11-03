@@ -1,5 +1,6 @@
 <?php
 
+//AFFICHAGE DES BACKGROUND EN FONCTION DE LA VARIABLE PAGE
 if($page == 'index.php'){
     echo '<body style="background-image: url(assets/img/index.jpg);">';
     
@@ -40,5 +41,5 @@ if($page == 'index.php'){
     echo '<body style="background-image: url(assets/img/booklist.jpg);">';
  
 }else{
-    echo '<body>';
+    echo '<body STYLE="background-color: #70adb5;">';
 }

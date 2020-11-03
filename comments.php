@@ -13,7 +13,7 @@ include 'assets/php/nav.php';
     $id = $_GET['id'];
     $sql = $db->query("SELECT * FROM rate AS r RIGHT JOIN book AS b on b.id=r.id_book WHERE b.id=$id");
     $sql->setFetchMode(PDO::FETCH_ASSOC);
-    // AFFICHAGE DES NOTE DU VIN EN PARTICULIER
+    // AFFICHAGE DES NOTE DU LIVRE EN PARTICULIER
     }
 ?>
 

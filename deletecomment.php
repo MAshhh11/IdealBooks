@@ -11,7 +11,7 @@ if (isset($_SESSION['id']) && $_SESSION['id'] == 3){ // VISIBLE SEULEMENT DES AD
         if(isset($_GET['id'])){
             $id = $_GET['id']; // RECUPERE L'ID
 
-            //REQUETTE JOINTE POUR ATTEINDRE LE COMPTEUR DANS LA TABLE WINE DEPUIS L'A ID RATE
+            //REQUETTE JOINTE POUR ATTEINDRE LE COMPTEUR DANS LA TABLE BOOK DEPUIS L'A ID RATE
             $sql = $db->query("SELECT * FROM book AS b RIGHT JOIN rate AS r on b.id=r.id_book WHERE r.id_rate= $id");
             $sql->setFetchMode(PDO::FETCH_ASSOC);
             $row = $sql->fetch();

@@ -1,4 +1,6 @@
 <?php
+
+//TRY CATCH DE CONNEXION: ACCES A LA DB ET REDIRECTION INDEX SI LOGOUT
     session_start();
      if (empty($_SESSION) && $page =='profile' || empty($_SESSION) && $page == 'index'){
          header('Location: index.php');

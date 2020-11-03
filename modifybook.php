@@ -13,7 +13,7 @@ if(isset($_SESSION['id'])){    // VISIBLE SEULEMENT DES USERS
         $sql = $db->query("SELECT * FROM book WHERE id=$id");
         $sql->setFetchMode(PDO::FETCH_ASSOC);
     
-        $result = $sql->fetch(); // AFFICHAGE LES DONNEES DU VIN A MODIFIER
+        $result = $sql->fetch(); // AFFICHAGE LES DONNEES DU LIVRE A MODIFIER
     }
 
 ?>

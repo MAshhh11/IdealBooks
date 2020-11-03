@@ -10,14 +10,14 @@ if(isset($_SESSION['id'])){ // ACCES SEULEMENT AUX USERS
     if(isset($_GET['id'])) { // SI L'ID EST RECUPEREE
 
         $id = $_GET['id'];
-        // RECUPERATION DES DONNÉES D'UN VIN EN PARTICULIER
+        // RECUPERATION DES DONNÉES D'UN LIVRE EN PARTICULIER
         $sql = $db->query("SELECT * FROM book WHERE id=$id");
         $sql->setFetchMode(PDO::FETCH_ASSOC);
     
         $result = $sql->fetch();
 
         $id_user = $_SESSION['id'];
-        // RECUPERATION DES DONNÉES D'UN VIN EN PARTICULIER
+        // RECUPERATION DES DONNÉES D'UN LIVRE EN PARTICULIER
         $sql2 = $db->query("SELECT * FROM user WHERE id=$id_user");
         $sql2->setFetchMode(PDO::FETCH_ASSOC);
         $row = $sql2->fetch();

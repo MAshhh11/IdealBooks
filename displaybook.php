@@ -13,7 +13,7 @@ include 'assets/php/nav.php';
         <div id="text-welcome">
             <h2 class="ml3">Welcome to ideal books!</h2>
                 <?php
-                    displayBook();//FONCTION QUI AFFICHE LES VINS
+                    displayBook();//FONCTION QUI AFFICHE LE LIVRE
                 ?>
         </div>
     </article>

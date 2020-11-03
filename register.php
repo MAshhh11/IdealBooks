@@ -47,6 +47,7 @@ if (isset($_POST['submit-signup'])){
     <article id="cartouche">
         <div id="text-welcome">
             <h2 class="ml3">REGISTER NEW USER</h2>
+            <p>Enter the following informations for a new user registration:</p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                 <div>
                     <input type="text" name="user_email_signup" placeholder="EMAIL">
@@ -55,7 +56,7 @@ if (isset($_POST['submit-signup'])){
                     <input type="password" name="user_password_signup" placeholder="PASSWORD">
                 </div>
                 <div>
-                    <input type="password" name="user_password_2_signup" placeholder="CONFIRM PASSWORD">
+                    <input type="password" name="user_password_2_signup" placeholder="REPEAT PASSWORD">
                 </div>
                 <div>
                     <input type="submit" name="submit-signup" class="button3" value="ADD NEW USER">
