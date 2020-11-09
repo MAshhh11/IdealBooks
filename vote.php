@@ -17,7 +17,7 @@ if(isset($_SESSION['id'])){ // ACCES SEULEMENT AUX USERS
         $result = $sql->fetch();
 
         $id_user = $_SESSION['id'];
-        // RECUPERATION DES DONNÉES D'UN LIVRE EN PARTICULIER
+        // RECUPERATION DES DONNÉES DE L'UTILISATEUR
         $sql2 = $db->query("SELECT * FROM user WHERE id=$id_user");
         $sql2->setFetchMode(PDO::FETCH_ASSOC);
         $row = $sql2->fetch();

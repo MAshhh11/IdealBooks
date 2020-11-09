@@ -43,7 +43,7 @@ include 'assets/php/nav.php';
 <section>
     <article id="cartouche">
         <div id="text-welcome">
-            <h2 class="ml3">Welcome to MyCave!</h2>
+            <h2 class="ml3">Welcome to Ideal Books!</h2>
             <h3>YOUR PROFILE</h3>
             <p>Please check your informations below:</p>
             <!-- FORMULAIRE -->

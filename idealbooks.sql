@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : lun. 26 oct. 2020 à 13:53
+-- Généré le : lun. 09 nov. 2020 à 13:09
 -- Version du serveur :  10.4.14-MariaDB
 -- Version de PHP : 7.4.9
 
@@ -46,7 +46,7 @@ CREATE TABLE `book` (
 
 INSERT INTO `book` (`id`, `title`, `author`, `genre`, `synopsis`, `edition`, `publishyear`, `picture`, `id_user`, `count_rate`) VALUES
 (5, 'Caliban et la sorcière', 'Silvia Federici', 'Essay', 'Silvia Federici écrit un nouveau chapitre du Capital de Marx en écrivant une l\'histoire du passage du féodalisme du capitalisme du point de vue des femmes, et où le capitalisme apparaît moins comme une lente transformation naturelle qu\'en tant que contre-révolution contre les luttes du Moyen-âge.', 'ENTREMONDE', '2014', 'upload/img/5f918e1885eca_caliban.jpg', 3, 1),
-(6, 'Les Aventuriers de la mer', 'Robin Hobb', 'Fantasy', 'Les vivenefs sont des vaisseaux magiques liés à la famille qui les possède par des liens empathiques. Ces navires sont insaisissables, ils bravent les tempêtes, évitent les récifs, distancent les monstres marins, sèment les pirates...', 'J\'AI LU', '2015', 'upload/img/5f919222406d5_aventuriers.jpg', 3, 1),
+(6, 'Les Aventuriers de la mer', 'Robin Hobb', 'Fantasy', 'Les vivenefs sont des vaisseaux magiques liés à la famille qui les possède par des liens empathiques. Ces navires sont insaisissables, ils bravent les tempêtes, évitent les récifs, distancent les monstres marins, sèment les pirates...', 'J\'AI LU', '2015', 'upload/img/5f919222406d5_aventuriers.jpg', 3, 2),
 (7, 'Sauvage', 'Jamey Bradbury', 'Fantasy', 'À dix-sept ans, Tracy Petrikoff possède un don inné pour la chasse et les pièges. Elle vit à l\'écart du reste du monde et sillonne avec ses chiens de traîneau les immensités sauvages de l\'Alaska. Immuablement, elle respecte les trois règles que sa mère, trop tôt disparue, lui a dictées : «ne jamais perdre la maison de vue», «ne jamais rentrer avec les mains sales» et surtout «ne jamais faire saigner un humain».', 'LIZZIE', '2019', 'upload/img/5f9193086f77e_sauvage.jpg', 3, 1),
 (9, 'King Kong Théorie', 'Virginie Despentes', 'Essay', 'En racontant pour la première fois comment elle est devenue Virginie Despentes, l\'auteur de Baise-moi conteste les discours bien-pensants sur le viol, la prostitution, la pornographie. Manifeste pour un nouveau féminisme.', 'LE LIVRE DE POCHE', '2007', 'upload/img/5f92cc07d6fbc_kingkong.jpeg', 3, 1),
 (10, 'L\'Assassin royal', 'Robin Hobb', 'Fantasy', 'Au château de Castelcerf le roi Subtil Loinvoyant règne sur les Six Duchés ; il est aidé dans sa lourde tâche par son fils Chevalerie qui, comme son père et tous les nobles du royaume, porte le nom de la qualité que ses parents espéraient le voir développer. Ainsi le frère du Roi-servant s\'appelle-t-il Vérité et leur demi-frère, né d\'un second lit, Royal...', 'J\'ai Lu', '2014', 'upload/img/5f92ccd4ea451_assassin.jpg', 3, 1),
@@ -56,7 +56,13 @@ INSERT INTO `book` (`id`, `title`, `author`, `genre`, `synopsis`, `edition`, `pu
 (15, 'Le Trône de Fer', 'George R.R. Martin', 'Fantasy', 'Le royaume des sept couronnes est sur le point de connaître son plus terrible hiver: par-delà le mur qui garde sa frontière nord, une armée de ténèbres se lève, menaçant de tout détruire sur son passage. Mais il en faut plus pour refroidir les ardeurs des rois, des reines, des chevaliers et des renégats qui se disputent le trône de fer, tous les coups sont permis, et seuls les plus forts, ou les plus retors s\'en sortiront indemnes...', 'J\'AI LU ', '2010', 'upload/img/5f92d2fa59e15_GOT.jpg', 3, 1),
 (16, 'La stratégie du choc', 'Naomi Klein', 'Essay', 'Qu\'y a-t-il de commun entre le coup d\'Etat de Pinochet au Chili en 1973, le massacre de la place Tiananmen en 1989, l\'effondrement de l\'Union soviétique, le naufrage de l\'épopée Solidarnosc en Pologne, les difficultés rencontrées par Mandela dans l\'Afrique du Sud post-apartheid, les attentats du 11 septembre, la guerre en Irak, le tsunami qui dévasta les côtes du Sri Lanka en 2004, le cyclone Katrina, l\'année suivante, la pratique de la torture partout et en tous lieux - Abou Ghraïb ou Guantànamo - aujourd\'hui ?', 'PENGUIN', '2008', 'upload/img/5f92d9a67797a_strategie.jpg', 5, 1),
 (17, 'Beloved', 'Toni Morrisson', 'Roman', 'Vers 1870, aux États-Unis, près de Cincinnati dans l\'Ohio, le petit bourg de Bluestone Road, dresse ses fébriles demeures.  L\'histoire des lieux se lie au fleuve qui marquait jadis pour les esclaves en fuite la frontière où commençait la liberté.', '10-18', '2019', 'upload/img/5f92d7e53b01d_beloved.jpg', 5, NULL),
-(18, 'Dans la forêt', 'Jean Hegland', 'Roman', 'Rien n’est plus comme avant : le monde tel qu’on le connaît semble avoir vacillé, plus d’éléctricité ni d’essence, les trains et les avions ne circulent plus. Des rumeurs courent, les gens fuient. Nell et Eva, dix-sept et dix-huit ans, vivent depuis toujours dans leur maison familiale, au cœur de la forêt.', 'GALLMEISTER ', '2017', 'upload/img/5f92d8e7a2247_danslaforet.jpg', 5, NULL);
+(18, 'Dans la forêt', 'Jean Hegland', 'Roman', 'Rien n’est plus comme avant : le monde tel qu’on le connaît semble avoir vacillé, plus d’éléctricité ni d’essence, les trains et les avions ne circulent plus. Des rumeurs courent, les gens fuient. Nell et Eva, dix-sept et dix-huit ans, vivent depuis toujours dans leur maison familiale, au cœur de la forêt.', 'GALLMEISTER ', '2017', 'upload/img/5f92d8e7a2247_danslaforet.jpg', 5, NULL),
+(19, 'The Last Of Us II', 'Naughty Dog', 'Artbook', 'L\'artbook officiel du jeu vidéo le plus attendu de l\'année 2020 ! Plongez dans l\'univers de The Last of Us 2 grâce à cet artbook qui révèle les documents les plus secrets en provenance directe du studio de développement Naughty Dog, auteur des sagas vidéoludiques Uncharted et The Last of Us.', 'Omake Books', '2020', 'upload/img/5fa1192d26532_artbook-the-last-of-us-2.jpg', 3, NULL),
+(20, 'Sorceleur Tome 1', 'Andrzej Sapkowski', 'Fantasy', 'Geralt de Riv est un homme inquiétant, un mutant devenu le parfait assassin grâce à la magie et à un long entraînement. En ces temps obscurs, ogres, goules et vampires pullulent, et les magiciens sont des manipulateurs experts. Contre ces menaces, il faut un tueur à gages à la hauteur, et Geralt est plus qu\'un guerrier ou un mage. C\'est un sorceleur.', 'Milady', '2011', 'upload/img/5fa119e2325d2_sorceleur.jpg', 3, NULL),
+(21, 'Murena Tome 1', 'Jean Dufaux', 'Bande Dessinée', 'Mai 54, Rome, midi.  Il fait une chaleur torride sur l\'arène et les quelques gladiateurs survivants qui essaient encore de s\'entretuer n\'amusent plus personne, sauf l\'empereur Claude, affalé dans les gradins déserts, avide d\'entendre le dernier râle du dernier combattant.  En dehors de l\'arène, la vie est aussi féroce. Tout le monde veut le pouvoir, tout le monde est prêt à tuer pour l\'obtenir.', 'DARGAUX', '2017', 'upload/img/5fa11ab2a5886_murena.jpg', 3, NULL),
+(22, 'Sorcières', 'Mona Chollet', 'Essay', 'Tremblez, les sorcières reviennent ! disait un slogan féministe des années 1970. Image repoussoir, représentation misogyne héritée des procès et des bûchers des grandes chasses de la Renaissance, la sorcière peut pourtant, affirme Mona Chollet, servir pour les femmes d\'aujourd\'hui de figure d\'une puissance positive, affranchie de toutes les dominations.', 'ZONES', '2018', 'upload/img/5fa92b5cc5987_sorciere.jpg', 3, NULL),
+(23, 'Un pied au paradis', 'Ron Rash', 'Policier', 'Shérif d’une petite ville des Appalaches du Sud, Will Alexander sait que Holland Winchester, le voyou local, a été assassiné. L’ennui, c’est qu’il ne trouve ni corps ni aucun témoin du meurtre. Raconté avec simplicité à travers les voix du shérif, d’un fermier voisin, de sa superbe femme, de leur fils et de l’adjoint, Un pied au paradis a marqué la naissance d’une des plumes les plus fines et singulières de la littérature américaine.', 'POCHE', '2011', 'upload/img/5fa92c111e7d9_un pied au paradis.jpg', 3, NULL),
+(24, 'L\'Arabe du Futur 1', 'Riad Sattouf', 'Bande Dessinée', 'Né en 1978 d’un père syrien et d’une mère bretonne, Riad Sattouf grandit d’abord à Tripoli, en Libye, où son père vient d’être nommé professeur. Issu d’un milieu pauvre, féru de politique et obsédé par le panarabisme, Abdel-Razak Sattouf élève son fils Riad dans le culte des grands dictateurs arabes, symboles de modernité et de puissance viril...', 'ALLARY', '2014', 'upload/img/5fa92cd932a23_arabe .png', 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -87,7 +93,8 @@ INSERT INTO `rate` (`id_rate`, `user_fullname`, `rate`, `comment`, `id_user`, `i
 (13, 'User UserLastname', 5, 'On cite souvent 1984 et Big Brother à chaque fois que des nouvelles caméras de surveillance sont installées. J\'ai l\'impression que c\'est la seule chose qu\'on ait retenu de ce roman : la surveillance constante.', 5, 13),
 (14, 'User UserLastname', 5, 'Le livre de mon enfance!', 5, 14),
 (16, 'Marion Londero', 4, 'Si j\'étais un personnage, je serais Catelyn Stark. Non, pour sûr, Catelyn Stark n\'est pas mon personnage préféré de cette saga mais c\'est d\'elle dont je me sens le plus proche. Portée par un flot de sentiments contradictoires, elle ne prend certes pas toujours la bonne décision. ', 3, 15),
-(17, 'Marion Londero', 4, 'Un livre a surtout mettre entre toutes les mains! Naomi Klein nous décrit comment les grandes institutions (FMI, Banque mondiale) censées aider les pays pauvres ou en difficultés ne font finalement que les enfoncer encore plus dans la misère en leur imposant des mesures terribles et contraires à une économie stable et juste', 3, 16);
+(17, 'Marion Londero', 4, 'Un livre a surtout mettre entre toutes les mains! Naomi Klein nous décrit comment les grandes institutions (FMI, Banque mondiale) censées aider les pays pauvres ou en difficultés ne font finalement que les enfoncer encore plus dans la misère en leur imposant des mesures terribles et contraires à une économie stable et juste', 3, 16),
+(19, 'User UserLastname', 2, 'lala', 5, 6);
 
 -- --------------------------------------------------------
 
@@ -120,13 +127,16 @@ INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
 -- Index pour la table `book`
 --
 ALTER TABLE `book`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user` (`id_user`);
 
 --
 -- Index pour la table `rate`
 --
 ALTER TABLE `rate`
-  ADD PRIMARY KEY (`id_rate`);
+  ADD PRIMARY KEY (`id_rate`),
+  ADD KEY `id_user` (`id_user`),
+  ADD KEY `rate_ibfk_1` (`id_book`);
 
 --
 -- Index pour la table `user`
@@ -142,19 +152,36 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT pour la table `rate`
 --
 ALTER TABLE `rate`
-  MODIFY `id_rate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_rate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `book`
+--
+ALTER TABLE `book`
+  ADD CONSTRAINT `book_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
+
+--
+-- Contraintes pour la table `rate`
+--
+ALTER TABLE `rate`
+  ADD CONSTRAINT `rate_ibfk_1` FOREIGN KEY (`id_book`) REFERENCES `book` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `rate_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

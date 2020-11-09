@@ -4,6 +4,7 @@ require 'assets/php/connect.php';
 include 'assets/php/background-image.php';
 include 'assets/php/header.php';
 include 'assets/php/nav.php';
+
 if(isset($_SESSION['id'])){
     echo '<div class="danger">You are already logged! You can consult our library or add new books!</div>';
 }
